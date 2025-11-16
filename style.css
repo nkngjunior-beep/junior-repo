@@ -1,0 +1,223 @@
+/* EXISTING YOUR STYLES: PRESERVED */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: url('https://img.freepik.com/free-vector/bank-card-coin-withdrawal-money-money-payment-symbol-vector-illustration_587448-912.jpg') no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  padding: 40px 30px;
+  max-width: 1200px;
+  width: 95%;
+  margin: 40px auto;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from { transform: scale(0.9); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+/* HEADER */
+header {
+  background: rgba(0, 42, 128, 0.85);
+  backdrop-filter: blur(10px);
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header .logo {
+  font-weight: bold;
+  font-size: 22px;
+  color: #fff;
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 500;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+/* HERO SECTION */
+.hero-glass {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  text-align: left;
+}
+
+.hero-left {
+  flex: 1 1 48%;
+}
+
+.hero-left h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.hero-left p {
+  font-size: 14px;
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+.hero-right {
+  flex: 1 1 48%;
+  text-align: center;
+}
+
+.hero-right img {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.1);
+}
+
+/* BUTTON */
+.btn {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: all 0.3s ease;
+  font-weight: 600;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  background: rgba(255, 255, 255, 0.4);
+  color: #000;
+}
+
+/* SECTION HEADINGS */
+.section-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+/* FEATURES + STEPS */
+.features, .steps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.feature, .step {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 20px;
+  flex: 1 1 220px;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: center;
+}
+
+.feature h3, .step h3 {
+  color: #00eaff;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* SLIDER SECTION */
+.card-slider-section {
+  margin-top: 40px;
+}
+
+.card-slider {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding: 10px 0;
+  justify-content: center;
+}
+
+.card-slider img {
+  max-height: 180px;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.card-slider img:hover {
+  transform: scale(1.05);
+}
+
+/* TRUSTED LOGOS */
+.trusted-logos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.trusted-logos img {
+  height: 40px;
+  filter: grayscale(100%);
+}
+
+/* ABOUT US SECTION */
+.about-section p {
+  color: #ccc;
+  font-size: 15px;
+  margin-bottom: 20px;
+  text-align: justify;
+  line-height: 1.6;
+}
+
+/* FOOTER */
+footer {
+  background: rgba(0, 42, 128, 0.9);
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  color: #fff;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .hero-glass {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-left, .hero-right {
+    flex: 1 1 100%;
+  }
+
+  .features, .steps {
+    flex-direction: column;
+  }
+}
